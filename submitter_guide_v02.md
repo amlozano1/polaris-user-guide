@@ -31,7 +31,7 @@ Install the deb file - *you will need to substitute (version) and (architecture)
 You may want to run the following command to make sure any missing dependencies are installed:  
 `sudo apt-get -f install`
 
-Once you have installed mlat-client, you will need to configure it. You can do so through the post-install setup and/or by modifying [/etc/default/mlat-client](https://github.com/nstarpost/ppolaris-user-guide/mlat-client)
+Once you have installed mlat-client, you will need to configure it. You can do so through the post-install setup and/or by modifying /etc/default/mlat-client
 
 
 ##### Here are the key settings:  
@@ -46,7 +46,7 @@ Latitude & Longitude (in decimal form): See steps in *Getting Your Latitude and 
 3. Zoom in as close as possible  
 4. Click where the antenna is
 5. Take note of the decimal latitude & longitude shown in the box titled *dd.ddddd°* , and the elevation (in meters) which is shown in the box titled *elev.* See the screenshot below:  
-![Screenshot missing](https://github.com/nstarpost/polaris-user-guide/Lat-Long-Guide.png "Screenshot of geoplaner")
+![Screenshot missing](https://github.com/nstarpost/polaris-user-guide/Lat-Long-Guide.png "Screenshot of geoplaner.com")
 
 
 ## Source Confidentiality  

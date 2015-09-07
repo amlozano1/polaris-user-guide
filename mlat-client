@@ -1,0 +1,49 @@
+# mlat-client configuration file
+# This is a POSIX shell fragment.
+# You can edit this file directly, or use
+# "dpkg-reconfigure mlat-client"
+
+# Start the client?
+START_CLIENT="yes"
+
+# System user to run as.
+RUN_AS_USER="mlat"
+
+# User to log into the server as
+# if it is a valid email address, we will eventually send alerts here
+SERVER_USER="test@gmail.com"
+
+# Logfile to log to
+LOGFILE="/var/log/mlat-client.log"
+
+# Input receivier type (dump1090, beast, radarcape_12mhz, radarcape_gps, sbs)
+INPUT_TYPE="dump1090"
+
+# Input host to connect to for Beast-format messages
+INPUT_HOST="localhost"
+
+# Input port to connect to for Beast-format messages
+INPUT_PORT="30005"
+
+# Latitude of the receiver, in decimal degrees
+LAT="38.8955108"
+
+# Longitude of the receiver, in decimal degrees
+LON="-77.02499"
+# Altitude of the receiver, in metres
+ALT="4.2"
+
+# Port to listen for SBS connections, or 0 to disable
+SBS_PORT="31003"
+
+# Port to listen for extended SBS connections, or 0 to disable
+SBS_EXT_PORT="0"
+# SERVER_HOSTPORT added automatically on upgrade
+SERVER_HOSTPORT="polaris.nstarpost.com:40147"
+
+# INPUT_HOSTPORT added automatically on upgrade
+INPUT_HOSTPORT="localhost:30005"
+# RESULTS added automatically on upgrade
+RESULTS="basestation,listen,31003"
+# EXTRA_ARGS added automatically on upgrade
+EXTRA_ARGS=""
