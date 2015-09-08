@@ -10,7 +10,7 @@ mlat-client is still in development and not a part of any Debian / Raspbian arch
 
 You will need to install the build-essential metapackage and git first to create the package.
 
-`sudo apt-get -y install build-essential git`
+`sudo apt-get -y install build-essential git debhelper python3-dev`
 
 Now create a directory to create the package in:  
 `mkdir ~/mlat-pkg`
@@ -34,11 +34,18 @@ You may want to run the following command to make sure any missing dependencies 
 Once you have installed mlat-client, you will need to configure it. You can do so through the post-install setup and/or by modifying [/etc/default/mlat-client](https://github.com/nstarpost/polaris-user-guide/blob/master/mlat-client)
 
 
-##### Here are the key settings:  
-Server: polaris.nstarpost.com  
-Port: 40147  
-Username: If you want alerts, use a valid email address here  
+##### Here are the key settings:
+SERVER_HOSTPORT="polaris.nstarpost.com:40147"
+SERVER_USER= <If you want alerts, use a valid email address here>
+
 Latitude & Longitude (in decimal form): See steps in *Getting Your Latitude and Longitude*
+# Latitude of the receiver, in decimal degrees
+LAT="33.777"
+# Longitude of the receiver, in decimal degrees
+LON="-111.337"
+# Altitude of the receiver, in metres
+ALT="777.0"
+
 
 ##### Getting Your Latitude and Longitude
 1. Go to http://www.geoplaner.com
